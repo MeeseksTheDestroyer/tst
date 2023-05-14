@@ -1,0 +1,619 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.list{
+
+    font-size: 120%;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:black;
+}
+
+.list a{
+    color:black;
+}
+
+.container-absolute{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+    background: transparent;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+.header-show{
+    position: absolute;
+    top: 5vh;
+    width: 100%;
+    z-index: 8;
+}
+.show{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+
+.top{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.top div{
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+}
+
+.top div:nth-of-type(1){
+    width:50%;
+}
+
+
+.top div:nth-of-type(2){
+    width:50%;
+}
+
+.top div a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header div{
+    width: 30%;
+    display: flex;
+    justify-content:center;
+
+}
+
+header nav{
+    width: 40%;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+  
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+  }
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.icon-menu{
+    display: none;
+    cursor: pointer;
+   
+}
+
+.nav a{
+    color: white;
+}
+
+.slider-img{
+    width: 100%;
+    height:80vh;
+    background-color: red;
+    filter: brightness(90%);
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.zakladykarne.pl/wp-content/uploads/2020/05/wiezienie_zaklad_karny_kara_pozbawienia_wolnosci_zpozdrowieniem_wypiska_paczka_zywnosciowa_2_ciemne.jpg);
+}
+
+.logo-white{
+    filter: invert(100%);
+}
+
+.title{
+    height: 55%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    background:transparent;
+    color: white;
+  
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+  
+    letter-spacing: 3.5px;
+}
+
+.blue{
+    background-color: #0087ca;
+}
+
+.title h2{
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.title div div {
+    text-align: center;
+    width:100%;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: normal;
+}
+.buttons{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+
+}
+
+.buttons a{
+    margin: 5px;
+}
+
+.buttons a{
+
+    font-size: 130%;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 250px;
+    border-radius: 5px;
+    color: black;
+}
+
+.buttons a:hover{
+    filter: brightness(125%);
+}
+
+.buttons a:nth-of-type(1):hover{
+    filter: brightness(75%);
+}
+
+
+
+.buttons a:nth-of-type(1){
+    text-align: center;
+    
+    background-color: white;
+    
+
+}
+
+.buttons a:nth-of-type(2){
+
+    text-align: center;
+    
+    color: white;
+    background-color: #0087ca;
+}
+
+.about-us{
+    width: 100%;
+    min-height: 30vh;
+    padding: 60px 0px 60px 0px;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3.5px;
+    padding: 0px 0px 20px 0px;
+}
+
+.blue-mark{
+    color:#0087ca ;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+.white-mark{
+    color:white ;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-mark{
+    width: 80px;
+    height: 3px;
+    background-color: #e3ca2a;
+}
+
+.center-a{
+    width: 70%;
+    font-size: 1.88rem;
+}
+.info-container{
+    width:100%;
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    overflow:visible;
+    min-height:30vh;
+    padding-top:60px;
+        padding-bottom: 60px;
+    color: black;
+    background-color: #0087ca;
+}
+
+.questions{
+    width:40%;
+    height:80%
+}
+
+
+.question{
+    border-bottom:.5px solid white;
+    width:100%;
+    color:black;
+    padding-bottom:11px;
+    padding-top:11px;
+    cursor:pointer;
+    color: white;
+}
+
+.quest-mark{
+    width: 100%;
+    background-color: #0087ca;
+}
+
+.white{
+    width: 100%;
+    background-color: white;
+}
+
+
+.quest-mark h1{
+    text-align: center;    
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3.5px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.question-description{
+    margin-top:35px;
+    display:none;
+    padding-left:18px;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.question-title{
+    display:flex;
+    align-items:center;
+    font-size:116%;
+    letter-spacing:.1rem;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.quest1{
+    width:90%;
+    padding-left:18px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    font-size:1.45rem;
+
+    font-family: 'Instrument Sans', sans-serif;
+    
+   
+}
+.quest2{
+    width:10%;
+    padding-right:18px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    overflow:hidden
+}
+.rotation{
+    animation: rotation 0.2s linear;
+}
+
+
+.advantages{
+    min-height:30vh;
+    padding-top:60px;
+        padding-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.advantages-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+
+.advantage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 80px;
+    margin: 25px;
+}
+
+.advantage p{
+    font-size: smaller;
+}
+
+#dd{
+    background-position: center;
+
+    height: 100%;
+    width: 30%;
+    background-image: url(../images/fotel.png);
+}
+
+.advantage div{
+    padding-left: 8px;
+}
+
+.advantage div h1{
+    margin: 5px;
+}
+
+.advantage div p{
+    margin: 5px;
+}
+
+.przelewy24{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+footer{
+    width: 100%;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+footer a{
+    margin: 5px;
+    color: white;
+}
+
+
+.mark-border{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #0087ca;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+   
+    font-size: 2.5rem;
+  
+    letter-spacing: 3.5px;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+@media only screen and (max-width:500px){
+
+    .questions{
+        width:90%
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    .description{
+        font-size:65%
+    }
+    .questions{
+        width:80%
+    }
+
+
+    
+}
+@media only screen and (max-width: 950px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image{
+        width: 100%;
+        justify-content: center;
+        width: 450px;
+        height: 300px;
+    }
+
+    .main-container section{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 0;
+    }
+
+    .main-container section .main-about-us{
+        padding: 25px;
+    }
+    .top div:nth-of-type(1){
+        width: 100%;
+        text-align: center;
+    }   
+    .top div:nth-of-type(2){
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+    }
+    .hover-underline-animation{
+        display: none;
+    }
+    header div{
+        width: 50%;
+        justify-content: center;
+    }
+
+    header nav{
+        width: 50%;
+        justify-content: center;
+    }
+    main{
+        min-height: 120vh;
+    }
+
+    header div img{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .title{
+        height: 70%;
+    }
+
+    .buttons{
+
+        height: 30%;
+
+    
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h2{
+ 
+        font-size: 2.5rem;
+
+    }
+    
+    .title div div {
+
+        font-size: 1.5rem;
+
+    }
+
+    .main-image{
+        width: 100%;
+        justify-content: center;
+        width: 450px;
+        height: 300px;
+    }
+
+    .main-container section{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 0;
+    }
+
+    .main-container section .main-about-us{
+        padding: 25px;
+    }
+    .top div:nth-of-type(1){
+        width: 100%;
+        text-align: center;
+    }   
+    .top div:nth-of-type(2){
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+    }
+    .hover-underline-animation{
+        display: none;
+    }
+    header div{
+        width: 50%;
+        justify-content: center;
+    }
+
+    header nav{
+        width: 50%;
+        justify-content: center;
+    }
+
+
+    header div img{
+        height: 40px;
+    }
+}
+
